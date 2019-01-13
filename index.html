@@ -6,20 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles/index.css">
   <title>Password Generator</title>
+  <script src="index.js"></script>
 </head>
 <body>
   
-  <div  id="passwordGenerator">
+  <div id="passwordGenerator">
     <h1>Secure Password Generator</h1>
 
-
-    <form action="">
+    <form action="" id="form">
       <!--Add HTML here-->
+      <label for="passwordLength">Password length:</label>
+      <input name="passwordLength" id="passwordLength" type="text" min="4" placeholder="# of characters" required><br>
+      <input type="submit">
     </form>
 
 
     <!--A generated password should appear within <output> when the form is submitted -->
-    <output id="result" />
+    <output id="result"></output>
 
 
   </div>
